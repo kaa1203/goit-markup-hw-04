@@ -1,0 +1,312 @@
+:root
+{
+    --Iris: #4d5ae5;
+    --Ocean: #404bbf;
+    --White: #ffffff;
+    --Slate: #434455;
+    --Cornflower: #E7E9FC;
+    --Navy-Blue: #2E2F42;
+    --Cloud: #f4f4fd;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: var(--Slate);
+}
+
+/* GENERAL STYLE */
+.link 
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.button 
+{
+    border: none;
+    border-radius: 4px;
+    color: inherit;
+    cursor: pointer;
+}
+
+.logo
+{
+    font-family: 'raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.16;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+.list 
+{
+    list-style: none;
+}
+
+.header-one 
+{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    text-align: center;
+}
+
+.header-two 
+{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.header-three 
+{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+}
+
+.section
+{
+    padding: 120px 0;
+}
+
+.image
+{
+    display: block;
+    max-width: 100%; 
+    height: auto;
+}
+
+.container 
+{
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header
+{
+    border-bottom: 1px solid var(--Cornflower);
+    background-color: var(--White);
+}
+
+.nav-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar
+{
+    display: flex;
+    align-items: center;  
+    padding: 24px 0;
+}
+
+.nav-logo
+{
+    margin-right: 76px;
+}
+
+.nav-list
+{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link
+{
+    font-weight: 500;
+}
+
+.header-contact-list
+{
+    display: flex;
+    padding: 24px 0;
+    gap: 40px;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.header-contact-link:hover,
+.header-contact-link:focus,
+.highlight
+{
+    color: var(--Iris);
+    outline: none;
+}
+
+/* MAIN */
+
+/* Header */
+.hero-section
+{
+    display: flex;
+    background-color: var(--Navy-Blue);
+    justify-content: center;
+    align-content: center;
+    color: var(--White);
+    padding: 188px 0;
+    text-align: center;
+}
+
+.hero-header
+{
+    margin-bottom: 40px;
+}
+
+.header-button
+{
+    background-color: var(--Iris);
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Section One */
+.section-one-list
+{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.section-one-header
+{
+    margin-bottom: 8px;
+}
+
+/* Section Two */
+.section-two-header
+{
+    margin-bottom: 72px;
+}
+
+.section-two-list
+{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+/* Section Three */
+.section-three
+{
+    background-color: var(--Cloud);
+}
+
+.section-three-header
+{
+    margin: 120px 0 72px;
+}
+
+.section-three-list
+{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.section-three-item
+{
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-card
+{
+    text-align: center;
+    padding: 32px 0;
+}
+
+.team-name
+{
+    margin-bottom: 8px;
+}
+
+/* Portfolio Page */
+
+.filter-list
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    gap: 24px;
+}
+
+.filter-button
+{
+    padding: 12px 24px;
+    border: 1px solid var(--Cornflower);
+    background-color: var(--Cloud);
+    color: var(--Iris);
+}
+
+.active 
+{
+    color: white;
+    background-color: var(--OCEAN, #404BBF);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.project-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px 24px;
+}
+
+.project-item
+{
+    border: 1px solid var(--Cornflower);
+    background-color: var(--White);
+}
+
+.project-card
+{
+    padding: 32px 16px;
+}
+
+.card-header
+{
+    padding-bottom: 8px;
+}
+
+/* FOOTER */
+.footer-section
+{
+    padding: 100px 0px;
+}
+
+footer
+{
+    color: var(--White);
+    background-color: var(--Navy-Blue);
+}
+
+.footer-logo
+{
+    display: block;
+    margin-bottom: 16px;
+    color:inherit;
+}
