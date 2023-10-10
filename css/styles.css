@@ -428,10 +428,6 @@ body
 .footer-section
 {
     padding: 100px 0px;
-}
-
-footer
-{
     color: var(--White);
     background-color: var(--Navy-Blue);
 }
