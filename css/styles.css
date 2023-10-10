@@ -7,12 +7,21 @@
     --Cornflower: #E7E9FC;
     --Navy-Blue: #2E2F42;
     --Cloud: #f4f4fd;
+    --Green: #31D0AA;
+    --Light-Slate: #8E8F99;
+    --Grey: #2e2f42;;
+    --Dairy: #FCFCFC;
 }
 
 *
 {
     margin: 0;
     padding: 0;
+}
+
+*:focus
+{
+    outline: none;
 }
 
 body
@@ -88,6 +97,11 @@ body
     padding: 120px 0;
 }
 
+.no-top-padding
+{
+    padding-top: 0;
+}
+
 .image
 {
     display: block;
@@ -152,7 +166,6 @@ body
 .highlight
 {
     color: var(--Iris);
-    outline: none;
 }
 
 /* MAIN */
@@ -161,7 +174,15 @@ body
 .hero-section
 {
     display: flex;
-    background-color: var(--Navy-Blue);
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)
+        ),
+        url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     justify-content: center;
     align-content: center;
     color: var(--White);
@@ -179,6 +200,12 @@ body
     background-color: var(--Iris);
     padding: 16px 32px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.header-button:hover,
+.header-button:focus
+{
+    background: var(--Ocean);
 }
 
 /* Section One */
@@ -243,6 +270,105 @@ body
     margin-bottom: 8px;
 }
 
+.team-icon-item
+{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+/* Section Four */
+.section-four
+{
+    background-color: var(--White);
+}
+
+.section-four-header
+{
+    margin-bottom: 72px;
+}
+
+.section-four-item
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+/* SVGs */
+.svg-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cloud);
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.advantages-icon
+{
+    width: 64px;
+    height: 64px;
+}
+
+.soc-med-link
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--Cloud);
+    background-color: var(--Iris);
+}
+
+.soc-med-link:hover,
+.soc-med-link:focus
+{
+    background-color: var(--Green);
+}
+
+.soc-med-icon
+{
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.customer-link
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    color: var(--Light-Slate);
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+}
+
+.customer-icon
+{
+    width: 104px;
+    height: 56px;
+    fill: currentColor;
+}
+
+.customer-link:hover,
+.customer-icon:hover,
+.customer-link:focus
+{
+    border-color: var(--Ocean);
+    fill: var(--Ocean);
+}
+
+
 /* Portfolio Page */
 
 .filter-list
@@ -261,7 +387,9 @@ body
     color: var(--Iris);
 }
 
-.active 
+.active,
+.filter-button:hover, 
+.filter-button:focus 
 {
     color: white;
     background-color: var(--OCEAN, #404BBF);
@@ -280,6 +408,11 @@ body
 {
     border: 1px solid var(--Cornflower);
     background-color: var(--White);
+}
+
+.project-item:hover
+{
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .project-card
@@ -309,4 +442,21 @@ footer
     display: block;
     margin-bottom: 16px;
     color:inherit;
+}
+
+.footer-container
+{
+    display: flex;
+}
+
+.footer-soc-med
+{
+    margin-left: 120px
+}
+
+.footer-icon-item
+{
+    display: flex;
+    padding-top: 16px;
+    gap: 16px;
 }
