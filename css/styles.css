@@ -350,7 +350,7 @@ body
     height: 88px;
     color: var(--Light-Slate);
     border-radius: 4px;
-    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    border: 1px solid var(--Light-Slate);
 }
 
 .customer-icon
@@ -391,7 +391,7 @@ body
 .filter-button:focus 
 {
     color: white;
-    background-color: var(--OCEAN, #404BBF);
+    background-color: var(--Ocean);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
