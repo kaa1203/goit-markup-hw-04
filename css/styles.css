@@ -361,11 +361,10 @@ body
 }
 
 .customer-link:hover,
-.customer-icon:hover,
 .customer-link:focus
 {
     border-color: var(--Ocean);
-    fill: var(--Ocean);
+    color: var(--Ocean);
 }
 
 
